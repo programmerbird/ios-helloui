@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oaz-zc-3Gd"/>
+                        <viewControllerLayoutGuide type="bottom" id="NIR-2v-vbK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e9n-3Z-Kip">
+                                <rect key="frame" x="35" y="189" width="251" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="78"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nC7-dI-kza">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="k9y-83-lfd"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FmK-eM-qb3"/>
+                                    <barButtonItem title="Greeting!" id="cY2-ID-OSQ">
+                                        <connections>
+                                            <action selector="greetingDidTap:" destination="vXZ-lx-hvc" id="ulS-1n-u3O"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MA2-CB-sGo"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78431379795074463" green="0.97647064924240112" blue="0.41568630933761597" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="e9n-3Z-Kip" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="35" id="6P2-2D-qdk"/>
+                            <constraint firstItem="nC7-dI-kza" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Clt-Fh-xcf"/>
+                            <constraint firstItem="NIR-2v-vbK" firstAttribute="top" secondItem="nC7-dI-kza" secondAttribute="bottom" id="UKM-Sv-xbJ"/>
+                            <constraint firstAttribute="trailing" secondItem="nC7-dI-kza" secondAttribute="trailing" id="aQn-7H-YVV"/>
+                            <constraint firstAttribute="trailing" secondItem="e9n-3Z-Kip" secondAttribute="trailing" constant="34" id="dwD-60-DVv"/>
+                            <constraint firstItem="e9n-3Z-Kip" firstAttribute="top" secondItem="Oaz-zc-3Gd" secondAttribute="bottom" constant="169" id="gZg-V0-C0g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helloLabel" destination="e9n-3Z-Kip" id="e2y-25-34h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
